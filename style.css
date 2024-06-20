@@ -114,6 +114,10 @@ body{
     transform-origin: top;
 }
 
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -142,6 +146,10 @@ body{
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+}
+
+.cart-item-container.active{
+    right: 0;
 }
 
 .cart-item{
@@ -210,7 +218,7 @@ body{
 
 }
 
-@media (max-width:991px){
+@media (max-width:768px){
     #menu-btn{
         display: inline-block;
     }
@@ -224,6 +232,9 @@ body{
         height: calc(100vh - 9.5rem);
     }
 
+    .header .navbar.active{
+        right: 0;
+    }
     .header .navbar a{
         color: var(--black);
         display: block;
@@ -232,4 +243,20 @@ body{
         font-size: 2rem;
         
     }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    /* .header{
+        padding: 1.5rem 2rem;
+    } */
+
 }
